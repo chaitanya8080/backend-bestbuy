@@ -1,6 +1,6 @@
-const connect=require("../src/config/dbs");
+const connect=require("../src/config/db");
 const app=require("./index");
-const port=process.env.PORT || 2222;
+const port=process.env.PORT;
 app.listen(port,async()=>{
  try{
   console.log(`Listining the ${port}`);
